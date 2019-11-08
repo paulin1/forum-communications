@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="widget.css">
+	</head>
+	<body>
+		<div class="js-widget">
+			<div class="widget-title">World News</div>
+			<div class="news">
+				<a id="url_0"><div class="title" id="title_0"></div><a>
+				<div class="domain" id="domain_0"></div>
+			</div>
+			<div class="news">
+				<a id="url_1"><div class="title" id="title_1"></div><a>
+				<div class="domain" id="domain_1"></div>
+			</div>
+			<div class="news">
+				<a id="url_2"><div class="title" id="title_2"></div><a>
+				<div class="domain" id="domain_2"></div>
+			</div>
+			<div class="news">
+				<a id="url_3"><div class="title" id="title_3"></div><a>
+				<div class="domain" id="domain_3"></div>
+			</div>
+			<div class="news">
+				<a id="url_4"><div class="title" id="title_4"></div><a>
+				<div class="domain" id="domain_4"></div>
+			</div>
+		</div>
+		
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		
+			$.getJSON("https://www.reddit.com/r/worldnews.json", function(data) {
+			
+				var i;
+				var titles = [];
+				var domains = [];
+				var urls = []
+				for (i = 0; i < 5; i++) {
+					titles[i] = data["data"]["children"][i]["data"]["title"];
+					if (titles[i]) {
+						document.getElementById("title_" + i).innerHTML = titles[i];
+					}
+					domains[i] = data["data"]["children"][i]["data"]["domain"];
+					if (domains[i]) {
+						document.getElementById("domain_" + i).innerHTML = domains[i];
+					}					
+					urls[i] = data["data"]["children"][i]["data"]["url"];
+					if (urls[i]) {
+						document.getElementById("url_" + i).href = urls[i];
+					}	
+				}
+			});
+		</script>
+</html>

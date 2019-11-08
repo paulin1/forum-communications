@@ -1,0 +1,18 @@
+<pre id="zeroCool-log"></pre>
+<script type="text/javascript">
+	( function () {
+		var i;
+		for (i = 1; i <= 100; i++) {
+			if (i % 3 == 0 && i % 5 == 0) {
+				console.log("ZeroCool");
+			} else if (i % 5 === 0 ) {
+				console.log("Cool");
+			} else if (i % 3 === 0) {
+				console.log("Zero");
+			}			
+			else {
+				console.log(i);
+			}
+		}
+	})();
+</script>

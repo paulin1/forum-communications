@@ -1,0 +1,131 @@
+body {
+	background-color: #314049;
+}
+
+/* desktop design */
+.desktop-grid-container {
+  display: grid;
+  border: 1px solid #fff;
+  grid-template-columns: 35% 57% 8%;
+  padding: 10px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  margin-top: 50px;
+}
+.mobile-grid-container {
+  display: grid;
+  border: 1px solid #fff;
+  grid-template-columns: 100%;
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  margin-top: 50px;
+}
+/*mobile-design */
+.grid-item , .grid-item-mobile {
+	border: 1px solid #fff;
+	padding: 10px;
+	font-family: Arial;
+	padding-left: 20px;
+	padding-right: 30px;
+	font-weight: 500;
+	line-height: 1.5;
+}
+.grid-item-mobile {
+	padding:20px;
+}
+.f-row {
+	padding-top: 45px;
+}
+#title, #title-mobile {
+	font-size: 26px;
+	font-family: Arial Black;
+}
+#title {
+	text-align: right;
+	padding-left: 10px;
+}
+#title-mobile {
+	padding-left: 20px;
+}
+#subtitle, #subtitle-mobile {
+	
+	font-family: Arial Black;
+}
+#subtitle {
+	padding-top:25px;
+	font-size: 20px;
+}
+#subtitle-mobile {
+	padding-top:10px;
+	font-size: 19px;
+}
+.date {
+	color: grey;
+	font-size:17px;
+	font-family: Arial;
+	margin-top:25px;
+}
+.date {
+	
+}
+.social-media-icon, .social-media-icon-mobile {
+	width:20px;
+	height:20px;
+}
+.social-media-icon {
+	margin-bottom:20px;
+}
+.social-media-icon-mobile {
+	margin-right: 10px;
+}
+#link {
+	display: flex;
+	align-items: center;
+	padding-left:102px;
+}
+#link-bottom{
+	display:block;
+	padding-left:165px;
+}
+#link a, #link-bottom a, #link-mobile a, #link-bottom-mobile a  {
+	text-decoration: none;
+	color: #3893C7;
+	font-size:12px;
+	font-weight:bold;
+}#link a, #link-bottom a  {
+	text-align: right;
+}
+#image-box {
+	background-color: #C8CBCD;	
+	height:350px;
+	display: flex;
+	align-items: center;
+	color: #8B9297;
+	width:auto;
+	padding-right:45%;
+	padding-left:45%;	
+}
+.content {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+#footer, #footer-mobile {
+	max-width: 1020px;
+	margin: auto;
+	background-color: black;
+	color: white;
+	text-align:center;
+	vertical-align:middle;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-family: Arial;
+}
+#footer  {
+	max-width: 1020px;
+}
+#footer-mobile {
+	max-width: 525px;
+}
